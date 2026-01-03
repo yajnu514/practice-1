@@ -1,7 +1,7 @@
 name : "practice-workflows"
 on : 
     workflow_dispatch : 
-        
+
 jobs : 
     build : 
         runs-on : ubuntu-latest
@@ -10,3 +10,6 @@ jobs :
               uses : actions/checkout@v4
             - name : "echo hi "
               run : echo "hi from Yajnesh "
+            - name : "List files"
+              run : ls -la
+
